@@ -12,6 +12,11 @@
   --portfolio-photo-border: #eeeeee;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--background-white);
@@ -68,6 +73,9 @@ img {
 .contact:hover,
 .contact:focus {
   color: var(--brand-blue);
+  --color1: var(--brand-blue);
+  --color2: var(--brand-blue);
+  --color5: var(--brand-blue);
 }
 
 .contact-footer {
@@ -96,13 +104,13 @@ img {
   width: 200px;
   background-color: var(--background-grey);
   color: var(--font-dark);
+  margin: 0 auto;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
   cursor: pointer;
   font-family: inherit;
   display: block;
-  border-radius: 4px;
   padding: 11px 41px;
 }
 
@@ -137,10 +145,17 @@ img {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
-  padding: 106px 252px 30px 252px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 106px 0 30px 0;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.title-container {
+  padding-bottom: 106px;
 }
 
 .hidden {
@@ -149,6 +164,7 @@ img {
 
 .small-header {
   font-size: 14px;
+  margin-bottom: 10px;
   line-height: 1.17;
   color: var(--font-dark);
 }
@@ -220,7 +236,7 @@ img {
 }
 
 .navigation-logo {
-  margin-right: 88px;
+  margin-right: 93px;
 }
 
 .header .contact-list {
@@ -242,6 +258,11 @@ img {
 .application-list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.application-list-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .presentation-list {
@@ -288,7 +309,6 @@ img {
   cursor: pointer;
   font-family: inherit;
   display: block;
-  border-radius: 4px;
   padding: 6px 22px;
 }
 
@@ -312,4 +332,42 @@ img {
 
 .footer-block {
   padding: 60px 0;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact-footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.icon-envelope {
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  margin-right: 10px;
+}
+.icon-antenna {
+}
+
+.icon-clock {
+}
+
+.icon-diagram {
+}
+
+.icon-astronaut {
+}
+
+.icon-ellipse {
+  fill: #28292e;
+}
+
+.i-style {
+  background-color: var(--background-grey);
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
 }
