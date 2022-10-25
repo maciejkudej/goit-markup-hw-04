@@ -199,7 +199,7 @@ img {
   font-weight: 400;
   line-height: 1.71;
   text-align: center;
-  padding: 10px 0 30px;
+  padding: 10px 0 16px;
 }
 
 .container {
@@ -348,21 +348,6 @@ img {
 .icon-smartphone {
   margin-right: 10px;
 }
-.icon-antenna {
-}
-
-.icon-clock {
-}
-
-.icon-diagram {
-}
-
-.icon-astronaut {
-}
-
-.icon-ellipse {
-  fill: #28292e;
-}
 
 .i-style {
   background-color: var(--background-grey);
@@ -370,4 +355,17 @@ img {
   justify-content: center;
   padding: 25px 0;
   margin-bottom: 30px;
+}
+
+.icons-social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.icon-sm:hover,
+.icon-sm:focus {
+  --color1: var(--brand-blue);
+  --color2: var(--font-light);
 }
