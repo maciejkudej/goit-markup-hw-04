@@ -122,6 +122,8 @@ img {
   font-family: inherit;
   display: block;
   padding: 11px 41px;
+  border: none;
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -336,6 +338,7 @@ img {
   color: var(--font-dark);
   font-size: 16px;
   font-weight: 500;
+  border: none;
   border-radius: 4px;
   line-height: 1.63;
   cursor: pointer;
