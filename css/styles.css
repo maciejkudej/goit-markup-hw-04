@@ -149,11 +149,11 @@ img {
 }
 
 .background-img {
-  background-image: linear-gradient(
+  background: linear-gradient(
       var(--backgroung-dark-transparent),
       var(--backgroung-dark-transparent)
     ),
-    url("/images/background_header_img.jpg");
+    url("./../images/background_header_img.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 50%, 50% 50%;
   background-size: 1600px 600px, auto;
@@ -384,10 +384,14 @@ img {
   margin-bottom: 9px;
 }
 .icon-envelope {
+  position: relative;
+  bottom: -1px;
   margin-right: 10px;
 }
 
 .icon-smartphone {
+  position: relative;
+  bottom: -3px;
   margin-right: 10px;
 }
 
@@ -426,19 +430,15 @@ img {
   border-radius: 4px;
 }
 
+.i-border:hover,
+.i-border:focus {
+  --color4: var(--brand-blue);
+  border: 1px solid var(--brand-blue);
+}
+
 .icon-group-style {
   display: flex;
   flex-direction: row;
-}
-
-.icon-group-style:hover,
-.icon-group-style:focus {
-  --color4: var(--brand-blue);
-}
-
-.i-border:hover,
-.i-border:focus {
-  border: 1px solid var(--brand-blue);
 }
 
 .small-header-footer {
